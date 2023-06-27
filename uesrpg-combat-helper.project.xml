@@ -1,0 +1,6 @@
+<project>
+	<name>uesrpg-combat-helper</name>
+	<url>https://github.com/lawfulstupid/UESRPG-Combat-Helper.git</url>
+	<build>npm install && npm run build</build>
+	<target>dist/uesrpg-combat-helper</target>
+</project>
