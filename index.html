@@ -14,8 +14,21 @@
 	<br><br>
 	Currently only listing my static JS projects, more will be added when I set up a server.
 	<br><br>
-	Also take a look at my cat. Her name is "Cat".
+	Also take a look at my cat:
 	<br>
-	<img src="cat.jpg" height="500px">
+	<img
+		name="img"
+		src="blank.jpg"
+		height="500px"
+		title="Her name is 'Madam'"
+		onclick="random_pic();"
+	>
 </body>
+<script>
+	function random_pic() {
+		var filenum=Math.floor(Math.random() * 9);
+		document.img.src="catpics/" + filenum + ".jpg";
+	}
+	random_pic();
+</script>
 </html>
