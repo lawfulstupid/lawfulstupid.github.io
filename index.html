@@ -36,24 +36,15 @@
 		<br>
 		<em>Generates gibberish in various languages.</em>
 	</p>
-	<p>
-		Currently only listing my static JS projects, more will be added when I set up a server.
+	<p id="catpic" style="display: none">
+		Please enjoy this picture of Madam (RIP):
+		<br>
+		<img name="img" height="500px">
 	</p>
-	Also take a look at my cat:
-	<br>
-	<img
-		name="img"
-		src="blank.jpg"
-		height="500px"
-		title="Her name is 'Madam'"
-		onclick="random_pic();"
-	>
 </body>
 <script>
-	function random_pic() {
-		var filenum=Math.floor(Math.random() * 9);
-		document.img.src="catpics/" + filenum + ".jpg";
-	}
-	random_pic();
+	const filenum = Math.floor(Math.random() * 9);
+	document.img.src = "catpics/" + filenum + ".jpg";
+	document.getElementById('catpic').style.display = '';
 </script>
 </html>
